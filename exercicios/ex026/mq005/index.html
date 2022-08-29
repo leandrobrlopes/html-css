@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="http://">Opção 1</a></li>
                 <li><a href="http://">Opção 2</a></li>
@@ -28,5 +30,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid aspernatur ducimus ab sunt labore, impedit cupiditate molestias eum quas rerum ex iusto sint beatae vel dignissimos quos nostrum animi. Deserunt quasi eius necessitatibus itaque nemo cumque nulla facilis. Cum rem possimus eius minima quaerat, minus culpa, nisi perferendis libero ut reiciendis? Fuga earum ea odit doloremque! Voluptatibus sequi corporis voluptate aliquam ducimus porro possimus natus eaque alias quo, dignissimos deserunt recusandae tempore esse accusantium. Mollitia, tenetur expedita. Minima facere temporibus placeat numquam nam quidem eos, voluptatem alias, beatae perferendis commodi blanditiis quos ipsum illo quia totam, fugiat obcaecati culpa dolorum tenetur. Natus, error? Sint praesentium saepe repellendus? Corrupti vel in fugit voluptates, rem officia porro, saepe nulla culpa ipsa aut possimus ea modi hic exercitationem error excepturi. Quasi repellendus, esse hic neque fugiat doloribus officiis laborum nam ratione rerum ad quia! In, incidunt culpa possimus illum facere delectus magni quis commodi labore quo aliquam, repellat sint quae ab, similique eligendi cumque voluptas impedit. Ipsa beatae molestias ex praesentium iusto laudantium sit quidem accusamus quaerat sed magnam, tempore at dolorem doloribus fuga officia! Et ipsum suscipit sapiente minus quisquam deserunt soluta! Obcaecati, enim! Nihil vel rerum nesciunt? Nam, ducimus vel!</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
